@@ -481,7 +481,7 @@ input[type=checkbox]:checked ~ .menu {
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 365px){
     .content div#cont_right div#language img{
         top: 5px;
     }
