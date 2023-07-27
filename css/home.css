@@ -76,7 +76,7 @@ input[type=checkbox] {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
-    background-image:linear-gradient(rgba(31, 28, 28, 0.864), rgba(255, 255, 255, 0)), url('img/Wallpaper/sahin-sezer-dincer-_DjBjjmpIIM-unsplash.jpg');
+    background-image:linear-gradient(rgba(31, 28, 28, 0.864), rgba(255, 255, 255, 0)), url('img\Wallpaper\sahin-sezer-dincer-_DjBjjmpIIM-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
