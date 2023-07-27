@@ -8,6 +8,11 @@ body{
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /*navigation bar*/
 .navbar {
     display: flex;
