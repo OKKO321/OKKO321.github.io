@@ -487,15 +487,15 @@ input[type=checkbox]:checked ~ .menu {
     }
 
     .content div#cont_right div#language label{
-        padding-right: 60px;
+        padding-right: 71px;
     }
 
     .content div#cont_right div#skills img{
-        top: 5;
+        top: 2;
     }
 
     .content div#cont_right div#skills label{
-        padding-right: 50px;
+        padding-right: 60px;
     }
 
 }
