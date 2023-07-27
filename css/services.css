@@ -70,7 +70,7 @@ input[type=checkbox] {
 /*Header*/
 .header {
     color: aliceblue;
-    background-image: url('img/Wallpaper/person%20playing%20with%20black%20handheld%20game%20console.jpg');
+    background-image: url('../img/Wallpaper/person%20playing%20with%20black%20handheld%20game%20console.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

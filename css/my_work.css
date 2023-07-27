@@ -71,7 +71,7 @@ input[type=checkbox] {
 /*Header*/
 .header {
     color: aliceblue;
-    background-image: url('img/Wallpaper/taylor-r-BVi74hFpZfc-unsplash.jpg');
+    background-image: url('../img/Wallpaper/taylor-r-BVi74hFpZfc-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
