@@ -373,7 +373,7 @@ input[type=checkbox]:checked ~ .menu {
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 395px){
     .header div#intro h1{
         font-size: 60px;
     }
