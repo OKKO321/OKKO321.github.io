@@ -350,6 +350,59 @@ input[type=checkbox]:checked ~ .menu {
     }
 }
 
+@media (max-width: 353px){
+    .header div#intro h1{
+        font-size: 60px;
+    }
+
+    .header div#intro h2{
+        font-size: 16px;
+    }
+
+    .content div#cont_head_1{
+        font-size: 13px;
+    }
+
+    .content div#work_list{
+        flex-wrap: wrap;
+        margin: auto;
+        width: 80%;
+    }
+
+    .content div#work_list div h3{
+        font-size: 6vw;
+    }
+
+    .content div#work_list div p{
+        font-size: 4vw;
+        padding: 5px;
+    }
+
+    .footer{
+        padding-left: 70px;
+    }
+
+    .footer div#footer_logo{
+        width: 50%;
+    }
+
+    .footer div#footer_logo img{
+        width: 40%;
+    }
+
+    .footer h2{
+        font-size: 6vw;
+    }
+
+    .footer h3{
+        font-size: 4vw;
+    }
+
+    .footer ul li{
+        font-size: 4vw;
+    }
+}
+
 @media (max-width: 291px){
     .header{
         height: 280px;
