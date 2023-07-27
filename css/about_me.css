@@ -481,6 +481,25 @@ input[type=checkbox]:checked ~ .menu {
     }
 }
 
+@media (max-width: 350px){
+    .content div#cont_right div#language img{
+        top: 5px;
+    }
+
+    .content div#cont_right div#language label{
+        padding-right: 50px;
+    }
+
+    .content div#cont_right div#skills img{
+        top: 6px;
+    }
+
+    .content div#cont_right div#skills label{
+        padding-right: 31px;
+    }
+
+}
+
 @media (max-width: 291px) {
     .header{
         height: 200px;
