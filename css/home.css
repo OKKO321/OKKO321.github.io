@@ -233,6 +233,29 @@ ul{
     margin-left: 0px;
 }
 
+/*back top*/
+.top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 20px;
+    margin-right: 10px;
+    place-self: end;
+    width: 45px;
+    aspect-ratio: 1;
+    background: #34a234;
+    border-radius: 10px;
+}
+
+.top:before {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+
+
 /*responsive*/
 @media (max-width: 837px) {
 .menu {

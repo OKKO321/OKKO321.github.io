@@ -89,28 +89,8 @@
                 </ul>
             </div>
 
-            <div id="back_top">
-                <button title="Go to top" type="button"><img src="img/Logo/up-arrow.png" alt="up arrow"></button>
-            </div>
+            <a href="#" class="top"></a>
         </div>
     </div>
-
-<script>
-    let mybutton = document.getElementById("back_top");
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    }
-</script>
 </body>
 </html>
