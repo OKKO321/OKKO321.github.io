@@ -298,15 +298,27 @@ input[type=checkbox] {
     height: 25px;
 }
 
-.footer div#back_top button{
-    position: fixed;
-    background-color: transparent;
-    right: 10px;
-    bottom: 10px;
+
+/*back top*/
+.top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 20px;
+    margin-right: 10px;
+    place-self: end;
+    width: 45px;
+    aspect-ratio: 1;
+    background: #34a234;
+    border-radius: 10px;
 }
 
-.footer div#back_top img{
-    width: 40px;
+.top:before {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
 }
 
 ul{

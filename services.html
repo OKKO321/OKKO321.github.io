@@ -89,32 +89,6 @@
         </div>
     </div>
 
-    <script>
-        function classToggle() {
-            const navs = document.querySelectorAll('.center')
-            
-            navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-        }
-        document.querySelector('.toggle')
-        .addEventListener('click', classToggle);
-    </script>
-
-<script>
-    let mybutton = document.getElementById("back_top");
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    }
-</script>
+    <a href="#" class="top">`</a>
 </body>
 </html>
