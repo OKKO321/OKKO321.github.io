@@ -1,0 +1,660 @@
+.container{
+    padding: 10px;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    margin: 0px;
+}
+
+/*navigation bar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(47, 47, 56);
+    color: #fff;
+    width: 100%;
+}
+
+.nav-links {
+    width: 70%;
+}
+
+.nav-links a {
+    color: gray;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar div#logo {
+    height: 50px;
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-right: 1px solid white;
+}
+
+.navbar div#logo img{
+    width: 50%;
+    padding-left: 20px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 2em;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.menu a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 35px;
+    user-select: none;
+    padding-right: 20px;
+    text-align: end;
+}
+
+
+/*Header*/
+.header {
+    color: aliceblue;
+    background-image: linear-gradient(rgba(31, 28, 28, 0.864), rgba(255, 255, 255, 0)), url('file:///D:/Assignment%20-%20Web/img/Wallpaper/pexels-snapwire-618613.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 400px;
+    padding: 10px;
+    padding-left: 75px;
+}
+
+.header div#intro h1{
+    font-size: 80px;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+
+.header div#intro h2{
+    font-size: 25px;
+}
+
+/*Content*/
+.content{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+}
+
+.content div#enquiries{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.content div#enquiries > *{
+    width: 50%;
+}
+
+
+.content div#enquiries div{
+    border: 1px solid white;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 90px;
+}
+
+.content div#enquiries img{
+    width: 100%;
+}
+
+.content div#enquiries div h3{
+    border-bottom: 1px solid white;
+    font-size: 2vw;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.content div#enquiries div p{
+    font-size: 20px;
+}
+
+.content div#cont_left{
+
+    width: 50%;
+}
+
+.content div#cont_left img{
+    width: 50%;
+    border-radius: 20%;
+}
+
+.content div#cont_left h2{
+    font-size: 20px;
+}
+
+.content div#cont_left p{
+    text-align: left;
+    padding-left: 31%;
+    width: 40%;
+}
+
+.content div#cont_left ul {
+    padding-left: 40px;
+}
+
+.content div#cont_left ul li{
+    list-style: none;
+    padding: 10px 30px;
+    font-size: 1.4vw;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    background-image: url('file:///D:/Assignment%20-%20Web/img/Logo/email.png');
+}
+
+
+.content div#cont_right{
+    width: 50%;
+}
+
+.content div#cont_right img{
+    width: 4%;
+}
+
+.content div#cont_right div#language img{
+    position: relative;
+    padding-left: 48px;
+    top: 10px;
+}
+
+.content div#cont_right div#language label{
+    padding-right: 10px;
+}
+
+.content div#cont_right div#skills img{
+    position: relative;
+    padding-left: 48px;
+    top: 10px;
+}
+
+.content div#cont_right div#skills label{
+    padding-right: 10px;
+}
+
+.content div#cont_right div#cont_right_contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.content div#cont_right div#cont_right_contact div{
+    width: 100%;
+}
+
+
+.content div#cont_right h2{
+    width: 10%;
+    padding-top: 30px;
+    border-bottom: 1px solid white;
+}
+
+.content div#cont_right ul li{
+    list-style: none;
+    padding-top: 10px;
+    font-size: 1.4vw;
+}
+
+.content div#cont_right #cont_right_contact #phone ul li {
+    list-style: none;
+    padding: 10px 30px;
+    font-size: 1.4vw;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    background-image: url('file:///D:/Assignment%20-%20Web/img/Logo/telephone.png');
+}
+
+.content div#cont_right div#social ul li {
+    padding-right: 10px;
+    width: 5%;
+
+    float: left;
+}
+
+.content div#cont_right div#social ul li img{
+    width: 100%;
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    background-color: rgb(47, 47, 56);
+    padding-top: 60px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    margin-top: 5%;
+    border-bottom:1px solid white ;
+}
+
+.footer div#contact{
+    margin-right: 10px;
+}
+
+.footer div#footer_logo{
+    width: 40%;
+    padding-top: 10px;
+}
+
+.footer div#footer_logo img{
+    width: 20%;
+}
+
+.footer div#footer_logo p{
+    width: 100%;
+}
+
+.footer div#my_work ul li{
+    list-style: none;
+}
+
+.footer div#my_work ul li::before{
+    content: "\00BB";
+    padding-right: 10px;
+}
+
+.footer div#my_work {
+    width: 42%;
+}
+
+.footer div#contact {
+    width: 70%;
+}
+
+.footer div#contact img{
+    height: 25px;
+}
+
+.footer div#contact ul li {
+    list-style: none;
+}
+
+.footer div#contact ul li img{
+    position: relative;
+    top: 8px;
+    height: 25px;
+}
+
+.footer div#back_top button{
+    position: fixed;
+    background-color: transparent;
+    right: 10px;
+    bottom: 10px;
+}
+
+.footer div#back_top img{
+    width: 40px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+/*responsive*/
+@media (max-width: 850px) {
+    .footer{
+        padding-left: 55px;
+    }
+}
+
+@media (max-width: 837px) {
+    .menu {
+        display:none;
+        background-color: rgb(47, 47, 56);
+        text-align: right;
+}
+
+.menu a{
+        color: gray;
+        padding-right: 20px;
+}
+
+.menu a:hover {
+    color: white;
+}
+    
+.menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+}
+    
+.menu li + li {
+        margin-top: 12px;
+}
+    
+input[type=checkbox]:checked ~ .menu {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+    
+.hamburger {
+        color: gray;
+        display: block;
+}
+    
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer div#footer_logo img{
+        width: 30%;
+    }
+
+    .footer h3{
+        font-size: 3vw;
+    }
+
+    .footer ul li{
+        font-size: 2vw;
+    }
+
+
+    
+    .footer h2{
+        font-size: 4vw;
+    }
+
+    .content div#work_list div h3{
+        font-size: 3vw;
+    }
+
+    .content div#work_list div p{
+        font-size: 2vw;
+    }
+
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+
+
+
+
+    
+}
+
+@media (max-width: 664px) {
+    .content div#cont_right div#cont_right_contact{
+        width: 100%;
+    }
+
+    .content div#cont_right #cont_right_contact ul li{
+        font-size: 5vw;
+    }
+
+
+    .content div#enquiries div h3{
+        padding-right: 50px;
+        margin-right: 10px;
+        font-size: 3vw;
+
+    }
+
+    .content div#cont_left ul li{
+        font-size:2vw;
+    }
+}
+
+@media (max-width: 465px) {
+    .header{
+        height: 280px;
+    }
+
+    .header div#intro h1{
+        font-size: 60px;
+    }
+
+    .content{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+
+
+}
+
+@media (max-width: 461) {
+
+
+    .header div#intro h1{
+        font-size: 40px;
+    }
+
+    .header div#intro h2{
+        font-size: 20px;
+    }
+
+    .content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+
+    .content div#enquiries{
+        width: 185%;
+    }
+
+    .content div#enquiries div{
+        padding-right: 97px;
+    }
+
+    .content div#enquiries div h3{
+        font-size: 6vw;
+    }
+
+    .content div#cont_left ul li{
+        font-size: 4vw;
+    }
+
+    .content div#cont_right div#cont_right_contact div{
+        width: 165%;
+    }
+    
+    .content div#cont_right #cont_right_contact #phone ul li{
+        font-size: 4.4vw;
+    }
+
+    .content div#cont_right div#social ul li {
+        width: 12%;
+    }
+    
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#footer_logo img{
+        width: 50%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+
+    .footer h2{
+        font-size: 6vw;
+    }
+
+    .footer h3{
+        font-size: 6vw;
+        width: 160%;
+    }
+
+    .footer ul li{
+        font-size: 4vw;
+    }
+
+    .footer h3{
+        font-size: 6vw;
+    }
+
+    .content div#cont_right div#social ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 415px) {
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+
+    .footer h2{
+        font-size: 6vw;
+    }
+
+    .footer ul li{
+        font-size: 4vw;
+    }
+
+    .footer h3{
+        font-size: 5vw;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .header div#intro h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 336px) {
+    .header div#intro h1{
+        font-size: 40px;
+    }
+
+    .header div#intro h2{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 291px) {
+
+
+    .header div#intro h1{
+        font-size: 40px;
+    }
+
+    .header div#intro h2{
+        font-size: 20px;
+    }
+
+    .content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+
+    .content div#enquiries{
+        width: 185%;
+    }
+
+    .content div#enquiries div{
+        padding-right: 97px;
+    }
+
+    .content div#enquiries div h3{
+        font-size: 6vw;
+    }
+
+    .content div#cont_left ul li{
+        font-size: 4vw;
+    }
+
+    .content div#cont_right div#cont_right_contact div{
+        width: 165%;
+    }
+    
+    .content div#cont_right #cont_right_contact #phone ul li{
+        font-size: 4.4vw;
+    }
+
+    .content div#cont_right div#social ul li {
+        width: 12%;
+    }
+    
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#footer_logo img{
+        width: 50%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+
+    .footer h2{
+        font-size: 6vw;
+    }
+
+    .footer h3{
+        font-size: 6vw;
+        width: 160%;
+    }
+
+    .footer ul li{
+        font-size: 4vw;
+    }
+
+    .footer h3{
+        font-size: 6vw;
+    }
+
+    .content div#cont_right div#social ul {
+        width: 100%;
+    }
+}
+
+

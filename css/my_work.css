@@ -1,0 +1,465 @@
+.container{
+    padding: 10px;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    margin: 0px;
+}
+
+/*navigation bar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(47, 47, 56);
+    color: #fff;
+    width: 100%;
+}
+
+.nav-links {
+    width: 70%;
+}
+
+.nav-links a {
+    color: gray;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar div#logo {
+    height: 50px;
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-right: 1px solid white;
+}
+
+.navbar div#logo img{
+    width: 50%;
+    padding-left: 20px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 2em;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.menu a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 35px;
+    user-select: none;
+    padding-right: 20px;
+    text-align: end;
+}
+
+
+/*Header*/
+.header {
+    color: aliceblue;
+    background-image: url('file:///D:/Assignment%20-%20Web/img/Wallpaper/taylor-r-BVi74hFpZfc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    padding: 10px;
+    padding-left: 75px;
+}
+
+.header div#intro h1{
+    font-size: 80px;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+
+.header div#intro h2{
+    font-size: 25px;
+}
+
+/*Content*/
+.content{
+    padding: 100px;
+    margin: auto;
+}
+
+.content div#cont_head_1{
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+.content div#favourite{
+    padding-top: 20px;
+}
+
+.content div#favourite img{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.content div#work_list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.content div#work_list > *{
+    width: 30%;
+}
+
+.content div#work_list div{
+    border: 1px solid white;
+    text-align: center;
+    margin: 10px;
+}
+
+.content div#work_list img{
+    width: 100%;
+}
+
+.content div#work_list div h3{
+    font-size: 2vw;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.content div#work_list div p{
+    font-size: 1.2vw;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    background-color: rgb(47, 47, 56);
+    padding-top: 60px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom:1px solid white ;
+}
+
+.footer div#contact{
+    margin-right: 10px;
+}
+
+.footer div#footer_logo{
+    width: 40%;
+    padding-top: 10px;
+}
+
+.footer div#footer_logo img{
+    width: 20%;
+}
+
+.footer div#footer_logo p{
+    width: 100%;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.footer div#my_work ul li::before{
+    content: "\00BB";
+    padding-right: 10px;
+}
+
+.footer div#my_work {
+    width: 42%;
+}
+
+
+.footer  h2{
+    font-size: 2vw;
+}
+
+.footer  h3{
+    font-size: 1.7vw;
+}
+
+.footer ul li{
+    font-size: 1.5vw;
+}
+
+.footer div#contact {
+    width: 50%;
+}
+
+.footer div#contact img{
+    height: 25px;
+}
+
+.footer div#contact ul li {
+    list-style: none;
+}
+
+.footer div#contact ul li img{
+    position: relative;
+    top: 8px;
+    height: 25px;
+}
+
+.footer div#back_top button{
+    position: fixed;
+    background-color: transparent;
+    right: 10px;
+    bottom: 10px;
+}
+
+.footer div#back_top img{
+    width: 40px;
+}
+
+/*responsive*/
+@media (min-width: 992px) {
+    .div#work_list > * {
+        width:calc(100% / 3);
+    }
+}
+
+@media (max-width: 850px) {
+    .footer{
+        padding-left: 55px;
+    }
+
+    .content div#work_list > *{
+        width: 46%;
+    }
+}
+
+@media (max-width: 837px) {
+    .menu {
+        display:none;
+        background-color: rgb(47, 47, 56);
+        text-align: right;
+}
+
+.menu a{
+        color: gray;
+        padding-right: 20px;
+}
+
+.menu a:hover {
+    color: white;
+}
+    
+.menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+}
+    
+.menu li + li {
+        margin-top: 12px;
+}
+    
+input[type=checkbox]:checked ~ .menu {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+    
+.hamburger {
+        color: gray;
+        display: block;
+}
+    
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer div#footer_logo img{
+        width: 30%;
+    }
+
+    .footer h3{
+        font-size: 3vw;
+    }
+
+    .footer ul li{
+        font-size: 2vw;
+    }
+
+
+    
+    .footer h2{
+        font-size: 4vw;
+    }
+
+    .content div#work_list div h3{
+        font-size: 3vw;
+    }
+
+    .content div#work_list div p{
+        font-size: 2vw;
+    }
+
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+
+
+
+
+    
+}
+
+@media (max-width: 741px) {
+    .content div#work_list > *{
+        width: 45%;
+    }
+}
+
+@media (max-width: 741px) {
+    .content div#work_list > *{
+        width: 44%;
+    }
+}
+
+@media (max-width: 560px) {
+    .header div#intro h1{
+        font-size: 70px;
+    }
+
+    .content div#work_list > *{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 415px) {
+    .header div#intro h1{
+        font-size: 60px;
+    }
+
+    .content{
+        padding: 30px;
+    }
+
+    .content div#work_list div h3{
+        font-size: 7vw;
+    }
+
+    .content div#work_list div p{
+        font-size: 5vw;
+    }
+
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+
+    .footer h2{
+        font-size: 6vw;
+    }
+
+    .footer ul li{
+        font-size: 4vw;
+    }
+
+    .footer h3{
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 373px) {
+    .header div#intro h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 291px) {
+    .header{
+        height: 235px;
+    }
+
+    .header div#intro h1{
+        font-size: 40px;
+    }
+
+    .header div#intro h2{
+        font-size: 20px;
+    }
+
+    .content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+
+    .content div#work_list{
+        width: 100%;
+    }
+
+    .content div#work_list div h3{
+        font-size: 6vw;
+    }
+    
+    .content div#work_list div p{
+        font-size: 4vw;
+    }
+
+    .content div#work_list > *{
+        width: 100%;
+    }
+
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+
+    .footer h2{
+        font-size: 6vw;
+    }
+
+    .footer ul li{
+        font-size: 4vw;
+    }
+
+    .footer h3{
+        font-size: 5vw;
+    }
+}
+
+

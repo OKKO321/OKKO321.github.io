@@ -1,0 +1,438 @@
+.container{
+    padding: 10px;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(47, 47, 56);
+    color: #fff;
+    width: 100%;
+}
+
+.nav-links {
+    width: 70%;
+}
+
+.nav-links a {
+    color: gray;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar div#logo {
+    height: 50px;
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-right: 1px solid white;
+}
+
+.navbar div#logo img{
+    width: 50%;
+    padding-left: 20px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 2em;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.menu a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 35px;
+    user-select: none;
+    padding-right: 20px;
+    text-align: end;
+}
+
+
+/*Header*/
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    background-image:linear-gradient(rgba(31, 28, 28, 0.864), rgba(255, 255, 255, 0)), url('file:///D:/Assignment%20-%20Web/img/Wallpaper/sahin-sezer-dincer-_DjBjjmpIIM-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
+
+.header div#profile_picture {
+    width:32%;
+    text-align: right;
+}
+
+.header div#profile_picture img {
+    clip-path: circle();
+}
+
+.header div#intro{
+    margin-left: auto;
+    text-align: left;
+    width: 65%;
+    margin-top: 35px;
+}
+
+.header div#intro h1{
+    font-size: 80px;
+    margin: 0px;
+}
+
+.header div#intro h2{
+    font-size: 30px;
+    margin: 0px;
+}
+
+/*Content*/
+.content{
+    padding: 100px;
+    margin: auto;
+}
+
+.content div#cont_head_1{
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+.content div#favourite{
+    padding-top: 20px;
+}
+
+.content div#favourite img{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.content div#work_list{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 101.5%;
+    margin-left: -9px;
+}
+
+.content div#work_list div{
+    border: 1px solid white;
+    text-align: center;
+    margin: 10px;
+}
+
+.content div#work_list img{
+    width: 100%;
+}
+
+.content div#work_list div h3{
+    font-size: 25px;
+}
+
+.content div#work_list div p{
+    font-size: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    background-color: rgb(47, 47, 56);
+    padding-top: 60px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom:1px solid white ;
+}
+
+.footer div#contact{
+    margin-right: 10px;
+}
+
+.footer div#footer_logo{
+    width: 40%;
+    padding-top: 10px;
+}
+
+.footer div#footer_logo img{
+    width: 20%;
+}
+
+.footer div#footer_logo p{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.footer div#my_work ul li::before{
+    content: "\00BB";
+    padding-right: 10px;
+}
+
+.footer div#my_work {
+    width: 42%;
+}
+
+.footer div#contact {
+    width: 70%;
+}
+
+.footer div#contact img{
+    height: 25px;
+}
+
+.footer div#contact ul li {
+    list-style: none;
+}
+
+.footer div#contact ul li img{
+    position: relative;
+    top: 8px;
+    height: 25px;
+}
+
+.footer div#back_top button{
+    position: fixed;
+    background-color: transparent;
+    right: 10px;
+    bottom: 10px;
+}
+
+.footer div#back_top img{
+    width: 40px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+/*responsive*/
+@media (max-width: 837px) {
+.menu {
+        display:none;
+        background-color: rgb(47, 47, 56);
+        text-align: right;
+}
+
+.menu a{
+        color: gray;
+        padding-right: 20px;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+    
+input[type=checkbox]:checked ~ .menu {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+    
+.hamburger {
+        color: gray;
+        display: block;
+}
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer div#footer_logo img{
+        width: 30%;
+    }
+
+    .footer h3{
+        font-size: 3vw;
+    }
+
+    .footer ul li{
+        font-size: 2vw;
+    }
+
+    .footer h2{
+        font-size: 4vw;
+    }
+
+    .content div#work_list div h3{
+        font-size: 3vw;
+    }
+
+    .content div#work_list div p{
+        font-size: 2vw;
+    }
+
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+    }
+
+    .header div#intro{
+        text-align: center;
+        width: 100%;
+    }
+
+    .header div#profile_picture{
+        width: 67%;
+    }
+
+    .header div#profile_picture img{
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 557px){
+    .content{
+        padding: 20px;
+    }
+
+    .header div#intro h1{
+        font-size: 70px;
+    }
+
+    .header div#intro h2{
+        font-size: 23px;
+    }
+
+    .content div#favourite img{
+        padding-top: 5px;
+        padding-bottom: 3px;
+    }
+
+    .content div#cont_head_1{
+        font-size: 15px;
+    }
+
+    .content div#work_list{
+        width: 104.5%;
+    }
+}
+
+@media (max-width: 291px){
+    .header{
+        height: 280px;
+    }
+
+    .header div#intro h1{
+        font-size: 40px;
+    }
+
+    .header div#intro h2{
+        font-size: 13px;
+    }
+
+    .content{
+        padding: 15px;
+    }
+
+    .content div#cont_head_1{
+        font-size: 10px;
+    }
+
+    .content div#favourite img{
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+
+    .content div#work_list{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .content div#work_list div{
+        width: 70%;
+    }
+
+    .content div#work_list div h3{
+        padding: 10px;
+        font-size: 7vw;
+    }
+
+    .content div#work_list div p{
+        font-size: 4vw;
+        padding: 10px;
+    }
+
+    .footer{
+        padding-left: 50px;
+    }
+
+    .footer #footer_logo {
+        width: 80%;
+    }
+
+    .footer div#footer_logo img{
+        width: 50%;
+    }
+
+    .footer div#my_work {
+        width: 100%;
+    }
+
+    .footer div#contact {
+        width: 100%;
+    }
+
+    .footer h2{
+        font-size: 6vw;
+    }
+
+    .footer h3{
+        font-size: 6vw;
+        width: 160%;
+    }
+
+    .footer ul li{
+        font-size: 4vw;
+    }
+
+    .footer h3{
+        font-size: 6vw;
+    }
+}
+
+

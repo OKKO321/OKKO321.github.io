@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/my_work.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6d74382380.js" crossorigin="anonymous"></script>
+    <title>My Work</title>
+</head>
+<body>
+    <div id="container">
+        <nav class="navbar">
+            <div id="logo">
+                <a href="file:///D:/Assignment%20-%20Web/index.html"><img src="img/Logo/penguin.png" alt="logo"></a>
+            </div>
+            <div class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" >
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <div><a href="file:///D:/Assignment%20-%20Web/index.html">Home</a></div>
+                <div><a href="file:///D:/Assignment%20-%20Web/about_me.html">About Me</a></div>
+                <div class="services">
+                <a href="file:///D:/Assignment%20-%20Web/services.html">Services</a>
+                </div>
+                <div><a href="file:///D:/Assignment%20-%20Web/my_work.html">My Work</a></div>
+                <div><a href="file:///D:/Assignment%20-%20Web/contact.html">Contact</a></div>
+            </div>
+            </div>
+        </nav>
+        <div class="header">
+            <div id="intro">
+                <h1>My Work</h1>
+                <h2>Develop game with love and passion.</h2>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div id="work_list">
+                <div id="mount">
+                    <img src="img/game/mount_and_blade.jpg" alt="mount and blade">
+                    <h3>Mount &amp; Blade II: Bannerlord</h3>
+                    <p>A strategy/action RPG. Create a character, engage in diplomacy, craft, trade and conquer new lands in a vast medieval sandbox.</p>
+                </div>
+                <div id="tail">
+                    <img src="img/game/tail_of_iron.jpg" alt="tail of iron">
+                    <h3>Tails of Iron</h3>
+                    <p>A hand-drawn RPG Adventure with punishingly brutal combat.</p>
+                </div>
+                <div id="stalker">
+                    <img src="img/game/stalker_2.jpg" alt="stalker 2">
+                    <h3>Stalker 2: Heart of Chernobyl</h3>
+                    <p>Discover the vast Chernobyl Exclusion Zone full of dangerous enemies, deadly anomalies and powerful artifacts.</p>
+                </div>
+                <div id="day_r">
+                    <img src="img/game/dar r urvival.jpg" alt="dar r Survival">
+                    <h3>Day R Survival</h3>
+                    <p>A post-apocalyptic text-graphic quest game taking place in the vastness of the extinct USSR.</p>
+                </div>
+                <div id="pocket">
+                    <img src="img/game/pocket_zone.jpg" alt="pocket_zone">
+                    <h3>Pocket Zone</h3>
+                    <p>A post apocalypse survival game
+                        you are new stalker with roles you can choose.</p>
+                </div>
+                <div id="adventure">
+                    <img src="img/game/life_in_adventure.jpeg" alt="life in adventure">
+                    <h3>Life In Adventure</h3>
+                    <p>A text-based fantasy game to enjoy the adventure with more and more items, selections, assets, and more.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="footer_logo">
+                <a href="#"><img src="img/Logo/penguin.png" alt="logo"> </a>
+                <h3>Develope game with love and passion.</h3>
+            </div>
+
+            <div id="my_work">
+                <h2>My Work</h2>
+                <ul>
+                    <li>Mount &amp; Blade II: Bannerlord</li>
+                    <li>Tails of Iron</li>
+                    <li>Stalker 2: Heart of Chernobyl</li>
+                    <li>Day R Survival</li>
+                    <li>Pocket Zone</li>
+                    <li>Life In Adventure</li>
+                </ul>
+            </div>
+
+            <div id="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li><img src="img/Logo/whatsapp.png" alt="whatsapp logo"> 010-9869507</li>
+                    <li><img src="img/Logo/gmail.png" alt="gmail logo"> leongkangle@gmail.com</li>
+                    <li><img src="img/Logo/twitter.png" alt=""> @LeongKangLe</li>
+                </ul>
+            </div>
+
+            <div id="back_top">
+                <button onclick="topFunction()" title="Go to top" type="button"><img src="img/Logo/up-arrow.png" alt="up arrow"></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function classToggle() {
+            const navs = document.querySelectorAll('.center')
+            
+            navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        }
+        document.querySelector('.toggle')
+        .addEventListener('click', classToggle);
+    </script>
+
+    <script>
+        let mybutton = document.getElementById("back_top");
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        }
+    </script>
+</body>
+</html>

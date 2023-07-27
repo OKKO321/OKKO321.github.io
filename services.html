@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/services.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6d74382380.js" crossorigin="anonymous"></script>
+    <title>Services</title>
+</head>
+<body>
+    <div id="container">
+        <nav class="navbar">
+            <div id="logo">
+                <a href="file:///D:/Assignment%20-%20Web/index.html"><img src="img/Logo/penguin.png" alt="logo"></a>
+            </div>
+            <div class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" >
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <div><a href="file:///D:/Assignment%20-%20Web/index.html">Home</a></div>
+                <div><a href="file:///D:/Assignment%20-%20Web/about_me.html">About Me</a></div>
+                <div class="services">
+                <a href="file:///D:/Assignment%20-%20Web/services.html">Services</a>
+                </div>
+                <div><a href="file:///D:/Assignment%20-%20Web/my_work.html">My Work</a></div>
+                <div><a href="file:///D:/Assignment%20-%20Web/contact.html">Contact</a></div>
+            </div>
+            </div>
+        </nav>
+
+        <div class="header">
+            <div id="intro">
+                <h1>Services</h1>
+                <h2>Services provice by me</h2>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div id="services_list">
+                <div id="destop">
+                    <img src="img/Logo/monitor.png" alt="destop logo">
+                    <h3>Desktop Game <br> Development</h3>
+                    <p>Game Development is the art of creating games and describes the design, development and release of a game.</p>
+                </div>
+                <div id="database">
+                    <img src="img/Logo/server.png" alt="database logo">
+                    <h3>Database Design</h3>
+                    <p><br>Database design is the organization of data according to a database model. The designer determines what data must be stored and how the data elements interrelate. </p>
+                </div>
+                <div id="mobile">
+                    <img src="img/Logo/smartphone.png" alt="mobile logo">
+                    <h3>Mobile Game <br> Development</h3>
+                    <p>Mobile game development is a sophisticated process that includes various steps like idealization of story lines, settings, and characters, production, realization, and monetization.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="footer_logo">
+                <a href="#"><img src="img/Logo/penguin.png" alt="logo"> </a>
+                <h3>Develope game with love and passion.</h3>
+            </div>
+
+            <div id="my_work">
+                <h2>My Work</h2>
+                <ul>
+                    <li>Mount &amp; Blade II: Bannerlord</li>
+                    <li>Tails of Iron</li>
+                    <li>Stalker 2: Heart of Chernobyl</li>
+                    <li>Day R Survival</li>
+                    <li>Pocket Zone</li>
+                    <li>Life In Adventure</li>
+                </ul>
+            </div>
+
+            <div id="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li><img src="img/Logo/whatsapp.png" alt="whatsapp logo"> 010-9869507</li>
+                    <li><img src="img/Logo/gmail.png" alt="gmail logo"> leongkangle@gmail.com</li>
+                    <li><img src="img/Logo/twitter.png" alt=""> @LeongKangLe</li>
+                </ul>
+            </div>
+
+            <div id="back_top">
+                <button title="Go to top" type="button"><img src="img/Logo/up-arrow.png" alt="up arrow"></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function classToggle() {
+            const navs = document.querySelectorAll('.center')
+            
+            navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        }
+        document.querySelector('.toggle')
+        .addEventListener('click', classToggle);
+    </script>
+
+<script>
+    let mybutton = document.getElementById("back_top");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    }
+</script>
+</body>
+</html>
