@@ -71,7 +71,7 @@ input[type=checkbox] {
 /*Header*/
 .header {
     color: aliceblue;
-    background-image: linear-gradient(rgba(31, 28, 28, 0.864), rgba(255, 255, 255, 0)), url('file:///D:/Assignment%20-%20Web/img/Wallpaper/sebastiaan-stam-5hBREM-5mnQ-unsplash.jpg');
+    background-image: linear-gradient(rgba(31, 28, 28, 0.864), rgba(255, 255, 255, 0)), url('img/Wallpaper/sebastiaan-stam-5hBREM-5mnQ-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

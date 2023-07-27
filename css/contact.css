@@ -71,7 +71,7 @@ input[type=checkbox] {
 /*Header*/
 .header {
     color: aliceblue;
-    background-image: linear-gradient(rgba(31, 28, 28, 0.864), rgba(255, 255, 255, 0)), url('file:///D:/Assignment%20-%20Web/img/Wallpaper/pexels-snapwire-618613.jpg');
+    background-image: linear-gradient(rgba(31, 28, 28, 0.864), rgba(255, 255, 255, 0)), url('img/Wallpaper/pexels-snapwire-618613.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -162,7 +162,7 @@ input[type=checkbox] {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
-    background-image: url('file:///D:/Assignment%20-%20Web/img/Logo/email.png');
+    background-image: url('img/Logo/email.png');
 }
 
 
@@ -223,7 +223,7 @@ input[type=checkbox] {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
-    background-image: url('file:///D:/Assignment%20-%20Web/img/Logo/telephone.png');
+    background-image: url('img/Logo/telephone.png');
 }
 
 .content div#cont_right div#social ul li {
